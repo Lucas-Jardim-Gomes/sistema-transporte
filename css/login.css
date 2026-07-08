@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../assets/imagens/login-img.png);
+    background-position: center;
+    background-size: cover;
+   
+}
+#login-container {
+  
+/* Fundo*/
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+/* Tamanho e posição */
+    width: 20%;
+    height: 43%;
+    min-height: 43%;
+    min-width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px var(--cor-terciaria);
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--cor-secundaria);
+}
+
+input:hover {
+    background-color: rgb(212, 241, 255);
+}

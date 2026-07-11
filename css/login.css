@@ -14,7 +14,6 @@ body {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
 
 /* Tamanho e posição */
     width: 20%;
@@ -26,6 +25,28 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 40px;
+/* remove o border antigo e adiciona: */
+    border: 1px solid rgba(var(--cor-terciaria), var(--cor-secundaria), 0.2);
+    animation: borda-led 3s ease-in-out infinite;
+}
+
+@keyframes borda-led {
+    0%, 100% {
+        box-shadow: 0 0 3px var(--cor-primaria),
+                    0 0 5px var(--cor-primaria);
+    }
+    50% {
+        box-shadow: 0 0 5px var(--cor-primaria),
+                    0 0 10px var(--cor-secundaria),
+                    0 0 20px var(--cor-terciaria);
+    }
+}
+
+h1 {
+    color: var(--cor-principal);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 form {

@@ -81,6 +81,8 @@ ul li a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 form {

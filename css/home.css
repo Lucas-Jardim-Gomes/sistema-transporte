@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 65px;
+    height: 70px;
 }
 
 main {
@@ -32,18 +32,49 @@ main {
 }
 
 nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin-left: auto;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100px;
+    height: 40px;
+    color: var(--cor-primaria);
+    border-radius: 5px;
+    background-color: var(--cor-secundaria);
+}
+
+nav a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 nav ul{
     display: flex;
-    align-items: center;
     list-style: none;
     gap: 20px;
-    padding: 10px 20px;
+    margin: 0;
 }
+
+ul li a {
+    margin-right: 30px;
+}
+
+#nav-auth li a {
+    margin-right: 0;
+    border: 1px solid var(--cor-sextaria);
+}
+
 
 .hero {
     display: flex;

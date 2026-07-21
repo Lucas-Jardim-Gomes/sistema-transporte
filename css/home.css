@@ -22,13 +22,9 @@ main {
     height: 100%;
 }
 
-.logo {
-    display: block;
-    background-image: url(../assets/imagens/logotipo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 60px;
+.logo img {
+    width: 300px;
+    height: auto;
 }
 
 nav {

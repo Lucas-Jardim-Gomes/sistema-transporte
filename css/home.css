@@ -18,8 +18,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 1150px;
     height: 100%;
+    margin: 0 auto;
 }
 
 .logo img {
@@ -113,10 +114,23 @@ form {
     padding: 10px;
 }
 
-input {
+.input-wrapper {
+    position:relative;
     width: 24em;
     height: 40px;
     border-radius: 10px;
+    
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-wrapper input {
+    padding-left: 35px; /* espaço para o ícone */
 }
 
 .btn-search {

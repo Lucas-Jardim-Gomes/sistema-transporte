@@ -84,54 +84,33 @@ ul li a {
     background-position: center;
 }
 
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: 100px;
-    height: 40rem;
-    width: 30rem;
-  
-}
 
-.hero-content h1 {
+
+.hero-text h1 {
     font-size: 4em;
     color: var(--cor-terciaria);
     margin: 0px;
 }
 
-form {
+
+.form-busca {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
-    background: var(--cor-terciaria);
-    height: 12em;
-    width: 60em;
+    background: var(--cor-secundaria);
+    width: 63em;
     border-radius: 10px;
     padding: 10px;
 }
 
-.input-wrapper {
-    position:relative;
-    width: 24em;
-    height: 40px;
+.form-busca input {
+    width: 140px;
+    height: 30px;
     border-radius: 10px;
-    
+    border: 1px solid var(--cor-terciaria);
+    padding-left: 10px;
 }
 
-.input-wrapper i {
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-.input-wrapper input {
-    padding-left: 35px; /* espaço para o ícone */
-}
 
 .btn-search {
     width: 16em;
